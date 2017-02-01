@@ -1,0 +1,122 @@
+pwd- printing working directory
+It tells you what your current or present directory is.
+
+ls-list the contents of a directory.
+
+cd-change Directories-move to another directory.
+
+cd..- back to directory.
+
+file-obtain information about what type of file or directory is.
+
+ls -a list the contentts of a dirctory,including hidden files.
+
+mkdir= to make directories.
+
+mkdir -p =to make parent directories as needed.
+
+cp=copy the contents of file from source to destination.
+
+mv=move the file from source to destination.or also used for renaming the file names.
+
+rm=removes the file .
+
+rm -r= removes the non empty directory.
+
+vi=used to open file if file is not exist it will create new file and allow to edit data in file.
+press esc to edit mode
+then i=used to insert data into the file.
+ZZ(Capital)=used to save and exit.
+:q!=discard all the changes since the last save mode.
+:W=save the data but dont exit.
+:wq=save and exit.
+arrows key=move the cursor around.
+j,k,h,l=move the cursor down,up,left,right.
+x=delete the single character.
+nx=delete the n character.
+dd=delete the current line.
+u=undo the action.
+U(Capital)=undo all the changes on the current line.
+
+cat=for viewing file.
+
+less= convinient viewing for large file.
+press "spacebar"=to forward whole page.
+press "b" =to backpage.
+press "q"=to quit.
+
+whenever you are in trouble you can press cntrl+c to get out of trouble. 
+
+wildcards=
+*= represents zero or more character.
+?= represents one character only.
+[]= represents range of charcaters.
+
+Permissions=
+chmod= change the permission  of particular user.
+3 types of user
+1.user(u).
+2.group(g).
+3.other user(go)
+3 types of permissions
+1.read(r).
+2.write(w).
+3.execute(x). 
++ used granting the permission for particular user.
+- used for revoking the permission from user.
+example chmod u-w aaa
+to revoke write opertion from owner for aaa file
+- represents the normal file.
+d represents the directory.
+ls -l shows all the permission of particular file of differant user.
+ls -ld shows permission of diffirent user on directory structure.
+we can also put permissions by using binary numbers such as
+example 777 means rwxrwxrwx for all user.
+451 means r--r-x--x .
+r-- for owner 
+r-x for group.
+--x for other user.
+example chmod 777 abc.
+
+filters-
+head=viewing the data by default first 10 lines.
+tail=viewing the data by default last 10 lines.
+sort=viewing the data in order by default alphabetically.
+nl=print line number with data.
+wc=print count of lines count of words count of character.
+cut=viewing the data into fields
+sed=search and replace the data.
+uniq=removes duplicate elements.
+tac=it prints data in reverse order.
+
+Regular expressions-
+egrep= it is used to print the data matches with particular pattern.
+.=it used to match single character only.
+*=to match zero or more charcters.
+?=to match zero or one characters
+{n}=to match character  fixed for n times.
+{n,m}=to match character atleast n times not more than that m times.
+[ ]= to match charcter within squre brackets.
+[a-k]=to spicify the range.
+^=to begin charcter.
+$=to end charcter.
+
+pipeing and direction.
+
+> saving the o/p into file
+>> appending the o/p into file.
+< reading i/p from file.
+2> redirect error message into file.
+| send the o/p of one program as input to another program.
+
+process management.
+top=viewing real time data of running process of the system.
+ps=listing the currently running the process.
+job-listing the running the background process.
+kill=kill the running process.
+fg=moves background process into foreground.
+ctrl+z=pause the current foreground moves into background process.
+du sh ./*=gives you file size present in your directory.
+df -h=display how much disk space used and free.
+shutdown -h =for shutdown
+shutdown -r=for reboot
